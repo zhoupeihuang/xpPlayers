@@ -6,6 +6,8 @@
 
 <script type="text/ecmascript-6">
 import Player from "xgplayer";
+import HlsJsPlayer from "xgplayer-hls.js";
+
 export default {
 	data(){
 		return{
@@ -19,6 +21,7 @@ export default {
 		getVideo(){
 			this.videoPlayer = new Player({
 				el: document.querySelector("#mmid"),
+				plugins: [HlsJsPlayer],  // 以xgplayer的插件形式传入并挂载
 				url: 'http://10.1.13.52:80/vodlive/loadmin/be05977add575832dc52655d4ad5c42e/0/20230628000000_20230628120000/FA-12-91_1.m3u8',
 				// url: 'http://192.168.10.215:8080/live/livestream.m3u8',
 				// url: "http://192.168.10.215:8080/live/livestream.flv",
