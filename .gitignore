@@ -1,6 +1,10 @@
 .DS_Store
 node_modules
-/dist
+package.json
+vue.config.js
+/src
+
+
 
 
 # local env files
@@ -22,3 +26,5 @@ pnpm-debug.log*
 *.sln
 *.sw?
 .vercel
+*.rar
+*.zip
